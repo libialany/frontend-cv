@@ -7,9 +7,7 @@ function Projects({type}) {
   const [projects, setProjects] = useState([])
   useEffect(() => {
     (async () => {
-      const res = await axiosClient.get(`/project/getAllProjectCategory/${type}`)
-      
-      setProjects(res.data);
+      console.log('Hola')
     })()
   }, []);
  //gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
