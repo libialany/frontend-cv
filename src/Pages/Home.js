@@ -8,7 +8,6 @@ function Home() {
   useEffect(() => {
     (async () => {
       const res = await axiosClient.get('/project')
-      // console.log(res?.data);
       setProjects(res.data);
     })()
   }, []);

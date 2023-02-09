@@ -7,7 +7,6 @@ function Certificados() {
   useEffect(() => {
     (async () => {
       const res = await axiosClient.get('/certificate')
-      //console.log(res?.data);
       setCertificados(res.data);
     })()
   }, []);

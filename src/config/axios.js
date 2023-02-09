@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "https://cv-backend-app.fly.dev/";
+const baseURL = process.env.REACT_APP_BACKEND_URL;
 const USER_ID = 123;
 
 const axiosClient = axios.create({

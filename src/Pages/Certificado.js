@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Certificado({certificado}) {
-    console.log(certificado);
+    
     return (
             <div className="card m-4 border-0" style={{"width": "18rem"}}>
                 <img alt='' className="card-img-top" src={certificado.image}/>
