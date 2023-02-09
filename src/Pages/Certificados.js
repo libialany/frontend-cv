@@ -7,7 +7,7 @@ function Certificados() {
   useEffect(() => {
     (async () => {
       const res = await axiosClient.get('/certificate')
-      console.log(res?.data);
+      //console.log(res?.data);
       setCertificados(res.data);
     })()
   }, []);
@@ -15,9 +15,10 @@ function Certificados() {
   return (
 
     <div className="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-      {certificados.map((certificado) =>
+      {certificados?.length?certificados.map((certificado) =>
         <Certificado certificado={certificado} key={uuid()} />
-      )}
+      ):<p>No certificados</p>
+      }
     </div>
   )
 }

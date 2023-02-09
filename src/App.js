@@ -14,7 +14,7 @@ function App() {
     <CNavbar/>
     <div className='container p-4'>
         <Routes>
-        <Route path="/" element={<Home/>} />       
+        <Route index element={<Home/>} />       
           <Route path="/certificados" element={<Certificados/>} />
           <Route path="/proyectos/python" element={<Projects  type={"python"}    />} />
           <Route path="/proyectos/javascript" element={<Projects  type={"js"} />} />
